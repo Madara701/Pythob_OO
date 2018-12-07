@@ -1,0 +1,33 @@
+- MRO <- Usado pra pesquisas em classes onde é usado multipla Herança
+	- metos para ver o mro de uma classe
+		classe p():
+			pass
+p = p()
+p.__mro__
+p.mro()
+
+isso mostra de onde as classes são derivadas qual é a 'Herança' dela
+
+class Veiculo():
+	pass
+
+class Carro(veiculo):
+	pass
+
+class Trem(Veiculo):
+	pass 
+
+Exemplo de  herança
+
+chamando o método MRO podemos ver em ordem de on cada classe herda suas funcionalidades
+
+chamando a classes super() ele faz a verificação dos atributos e métodos de cada classe para poder
+"chamar" oque vc precisa para ela funcionar!
+
+
+- classe MIXIN <- Quando utilizar? Se vc desejar utilizar uma funcionalidade em diferças classes diferentes
+é uma maneira 'segura' de utilizar multipla herança!
+
+
+ basicamnete elas espera outra classe criar seus atributos pra  que ela unicamente colabore como se fosse uma 
+função só que utilizando herança multipla!
