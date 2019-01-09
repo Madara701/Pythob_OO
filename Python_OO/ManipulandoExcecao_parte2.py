@@ -20,19 +20,16 @@ def divisao(divisor):
 			raise ValueError('13 nao eh legal')
 		return 10 / divisor
 	except ZeroDivisionError:
-		return 'Divisao por zero'
+		print( 'Divisao por zero')
 	except TypeError:
-		return 'Entre um um valor numerico'
+		print ('Entre um um valor numerico')
 	except ValueError:
 		print('Nao utilize o numero 13')
 		raise
-	else:
-		print('Nao ocorreu nenhuma excecao')
-	finally:
-		print('isso sempre sera executado')
+	
 
 
-divisao(15)
+divisao('a')
 
 '''
 try:
